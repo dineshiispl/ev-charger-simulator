@@ -5,10 +5,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 import java.util.Scanner;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"com.example.evsimulator"})
 public class Application implements CommandLineRunner {
 
     @Autowired

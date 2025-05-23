@@ -19,7 +19,7 @@ public class DemoConfig {
         for (int i = 0; i < 10; i++) {
             chargers.add(new Charger("C" + i, 100));
         }
-        return new PowerGrid(500, chargers);
+        return new PowerGrid("P",500, chargers);
     }
 
     @Bean

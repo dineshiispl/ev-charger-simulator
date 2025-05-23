@@ -3,7 +3,9 @@ package com.example.evsimulator.services;
 import com.example.evsimulator.model.Charger;
 import com.example.evsimulator.model.PowerGrid;
 import com.example.evsimulator.ports.StatePrinter;
+import org.springframework.stereotype.Service;
 
+@Service
 public class ConsoleStatePrinter implements StatePrinter {
         public void print(PowerGrid grid) {
             System.out.println("--- Grid State ---");

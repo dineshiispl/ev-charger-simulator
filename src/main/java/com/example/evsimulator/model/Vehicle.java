@@ -2,14 +2,21 @@ package com.example.evsimulator.model;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Data
 @Builder
+@Entity
+@NoArgsConstructor
 public class Vehicle {
-    private final String id;
-    private final double totalCapacity;
+    @Id
+    private String id;
+    private double totalCapacity;
     private double currentCharge;
-    private final double maxChargingSpeed;
+    private double maxChargingSpeed;
 
     public Vehicle(String id, double totalCapacity, double currentCharge, double maxChargingSpeed) {
         this.id = id;

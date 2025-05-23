@@ -1,7 +1,9 @@
 package com.example.evsimulator.shell;
 
 import com.example.evsimulator.ports.Command;
+import org.springframework.stereotype.Component;
 
+@Component
 public class CommandExecutor {
 
     private final CommandFactory factory;

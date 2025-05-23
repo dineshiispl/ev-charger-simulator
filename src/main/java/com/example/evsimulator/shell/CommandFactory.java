@@ -4,7 +4,9 @@ import com.example.evsimulator.ports.Command;
 import com.example.evsimulator.commands.*;
 import com.example.evsimulator.ports.StatePrinter;
 import com.example.evsimulator.services.ChargingService;
+import org.springframework.stereotype.Component;
 
+@Component
 public class CommandFactory {
     private final ChargingService service;
     private final StatePrinter printer;
